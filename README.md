@@ -14,12 +14,12 @@ A full-stack web application that allows multiple users to edit a document simul
 cd server
 ## run 
 npm install
-## run : start the server
+## run : 
 node index.js
 
 ### 2. Frontend
 cd client
 ## run
 npm install
-## run : start the application
+## run 
 npm start
