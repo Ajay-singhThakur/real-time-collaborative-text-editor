@@ -10,12 +10,16 @@ A full-stack web application that allows multiple users to edit a document simul
 
 ## Setup Instructions
 
-### 1. Backend
+### 1. Backend 
 cd server
+## run 
 npm install
+## run : start the server
 node index.js
 
 ### 2. Frontend
 cd client
+## run
 npm install
+## run : start the application
 npm start
