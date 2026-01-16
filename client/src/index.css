@@ -1,0 +1,143 @@
+/* General Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Editor Container */
+.editor-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Main Content Area */
+.main-editor-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+/* Quill Editor Styling */
+.quill-wrapper {
+  background-color: white;
+  width: 100%;
+  max-width: 850px;
+  min-height: 1056px; /* A4 Ratio */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+  padding: 8px 15px !important;
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Chat Sidebar */
+.chat-sidebar {
+  width: 320px;
+  background: white;
+  border-left: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.02);
+}
+
+.chat-header {
+  padding: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.message {
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  max-width: 90%
+}
+
+.message-sender {
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #4b5563;
+  margin-bottom: 2px;
+}
+
+/* Chat Input Area */
+.chat-input-form {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+}
+
+.chat-input-form input:focus {
+  border-color: #3b82f6;
+}
+
+.chat-input-form button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chat-input-form button:hover {
+  background: #2563eb;
+}
+
+/* Landing Page Button */
+.create-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.create-btn:hover {
+  transform: translateY(-2px);
+}
